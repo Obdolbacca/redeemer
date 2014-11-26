@@ -1,6 +1,6 @@
 # Redeemer
 
-TODO: Write a gem description
+Smart usage https for rails controllers
 
 ## Installation
 
