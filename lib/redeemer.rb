@@ -1,5 +1,3 @@
 require "redeemer/version"
 
-module Redeemer
-
-end
+require "redeemer/integrations"
