@@ -3,20 +3,18 @@ module Redeemer
     extend ActiveSupport::Concern
     include AbstractController::Callbacks
 
-    module << self
-      def to_secure(owner, params)
-        prepend_before_action() do
-
-        end
-      end
-
-      def to_https
+    def self.to_secure(owner, params)
+      prepend_before_action() do
 
       end
+    end
 
-      def remove_callbacks
+    def self.to_https
 
-      end
+    end
+
+    def self.remove_callbacks
+
     end
   end
 end
