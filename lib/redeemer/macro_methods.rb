@@ -1,17 +1,22 @@
+require 'active_support/concern'
 require 'redeemer/redirector'
 
 module Redeemer
   module MacroMethods
-    def ensure_secure_protocol(options = {})
-      self.to_secure(options)
-    end
+    extend ActiveSupport::Concern
 
-    def ensure_http(options = {})
-      Redeemer::Redirector.to_http(options)
-    end
+    included do
+      def self.ensure_secure_protocol(options = {})
+        self.to_secure(options)
+      end
 
-    def keep_current_protocol(options = {})
-      Redeemer::Redirector.remove_callbacks
+      def self.ensure_http(options = {})
+        Redeemer::Redirector.to_http(options)
+      end
+
+      def self.keep_current_protocol(options = {})
+        Redeemer::Redirector.remove_callbacks
+      end
     end
   end
 end

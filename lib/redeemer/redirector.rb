@@ -1,6 +1,7 @@
 module Redeemer
   module Redirector
     include ActionController::ForceSSL::ClassMethods
+    extend ActiveSupport::Concern
 
     ACTION_OPTIONS = [:only, :except, :if, :unless]
     URL_OPTIONS = [:protocol, :host, :domain, :subdomain, :port, :path]
