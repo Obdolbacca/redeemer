@@ -1,9 +1,5 @@
-module Redeemer
-  module Integrations
-    module ActionController
+require "redeemer/macro_methods"
 
-
-
-    end
-  end
+ActionController::Base.class_eval do
+  extend Redeemer::MacroMethods
 end
