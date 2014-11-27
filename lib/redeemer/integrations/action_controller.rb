@@ -3,9 +3,6 @@ if defined?(Rails)
 
   ActionController::Base.class_eval do
     include Redeemer::MacroMethods
-
-    private
-
-    extend Redeemer::Redirector
+    include Redeemer::Redirector
   end
 end

@@ -1,3 +1,3 @@
 module Redeemer
-  VERSION = "0.0.27"
+  VERSION = "0.0.33"
 end
