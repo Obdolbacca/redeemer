@@ -1,19 +1,20 @@
 module Redeemer
-  class Redirector
-    class << self
-      def to_secure
-        prepend_before_action(action_options) do
+  module Redirector
+    extend ActiveSupport::Concern
+    include AbstractController::Callbacks
 
-        end
-      end
-
-      def to_https
+    def to_secure(owner, params)
+      prepend_before_action() do
 
       end
+    end
 
-      def remove_callbacks
+    def to_https
 
-      end
+    end
+
+    def remove_callbacks
+
     end
   end
 end
