@@ -20,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In rails controller just specify:
+
+    $ ensure_secure_protocol
+
+or:
+
+    $ ensure_http
+
+or:
+    $ keep_current_protocol
 
 ## Contributing
 
