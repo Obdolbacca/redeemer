@@ -29,6 +29,7 @@ or:
     ensure_http
 
 or:
+
     keep_current_protocol
 
 ## Contributing
