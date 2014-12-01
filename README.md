@@ -22,14 +22,14 @@ Or install it yourself as:
 
 In rails controller just specify:
 
-    $ ensure_secure_protocol
+    ensure_secure_protocol
 
 or:
 
-    $ ensure_http
+    ensure_http
 
 or:
-    $ keep_current_protocol
+    keep_current_protocol
 
 ## Contributing
 
